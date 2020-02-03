@@ -3,33 +3,50 @@
   <title>CSS1</title>
   <meta charset="utf-8">
   <style>
-    h1 {
-      font-size : 60px;
-      text-align : center;
+    h4 {
+      border-width : 3px;
+      border-color : blue;
+      border-style : solid;
+      font-size : 20px;
+      display:inline;
+      padding : 10px;
+      margin : 20px;
     }
-
-    #active
-    {
+    #active {
       font-color : red;
     }
 
-    .saw
-    {
-      font-color : gray;
+    .saw {
+       font-color : gray;
     }
-
-    a {
-      color : black;
+    h1, a{
+      border : 5px solid red;
+      font-size : 30px;
+      text-align : center;
+      color : gray;
       text-decoration : none;
+    }
+    #grid{
+      border : 5px solid pink;
+      display:grid;
+      grid-template-columns : 150px 1fr;
+    }
+    div{
+      border : 5px solid gray;
     }
   </style>
 </head>
 
 <body>
  <h1><a href="3.html" class="saw" id = "active">CS1 study</a></h1>
+ <h4>What is <a href="https://ko.wikipedia.org/wiki/%EC%A2%85%EC%86%8D%ED%98%95_%EC%8B%9C%ED%8A%B8">CSS</a>?</h4> Follow the link
  <ol>
    <li><a href="index.html" class="saw">Go index</a></li>
-   <li><a href="1css.html">Today study</a></li>
+   <li><a href="1css.html" style = "display : block">Today study</a></li>
  </ol>
+ <div id = "grid">
+   <div>NAVIGATION</div>
+   <div>ARTICLE</div>
+ </div>
 
 </body>
